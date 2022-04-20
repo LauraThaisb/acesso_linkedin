@@ -1,0 +1,21 @@
+
+import { Given,When,Then,And } from "cypress-cucumber-preprocessor/steps";
+import LinkedinPage from "../pageobjects/LinkedinPage";
+const linkedinPage = new LinkedinPage
+
+Given("pesquisa pelo meu usuário do Linkedin", () => {
+    linkedinPage.acessarSite();
+})
+
+Given("adicionei o termo Linkedin", () => {
+    linkedinPage.acessarSite();
+})
+
+When("clicar em pesquisar", () => {
+    linkedinPage.visualizarPesquisaGoogle();
+})
+
+Then("ddeve me apresentar nas opções encontradas, o meu perfil", () => {
+    linkedinPage.visualizarPesquisaGoogle();
+})
+
